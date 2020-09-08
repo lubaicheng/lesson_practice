@@ -9,7 +9,7 @@
 @Email   :lu_baicheng@163.com
 '''
 
-with open("E:\\新建文件夹\\text.txt","r") as input_file:
+with open("E:\\新建文本文档.txt","r") as input_file:
     for index,line in enumerate(input_file):
         if index % 4 == 0:
             print(">" + line.strip()[1:])
