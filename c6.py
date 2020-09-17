@@ -10,6 +10,8 @@
 '''
 
 import re 
-a = 'p1ytho0python1pythonn2'
-r = re.findall('ython*',a)
+a = 'PythonqC#JavaPHPC#'
+r = re.sub('C#','Go',a,1)
+# a = a.replace('C#','Go')
+# style = type(a)
 print(r)
