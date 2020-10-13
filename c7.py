@@ -1,23 +1,23 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
-@文件    :c6.py
+@文件    :c7.py
 @说明    :
-@时间    :2020/09/16 23:00:16
+@时间    :2020/09/19 19:50:46
 @作者    :陆柏成
 @版本    :1.0
 @Email   :lu_baicheng@163.com
 '''
 
 import re 
-a = 'PythonqC#JavaPHPC#'
-
+s = 'ABC3721D86'
 
 def convert(value):
     matched = value.group()
-    return '!!'+ matched +'!!'
+    if int(matched) >=6:
+        return '9'
+    else:
+        return '0'
 
-r = re.sub('C#',convert,a)
-
-if __name__ == "__main__":
-    print(r)
+r = re.sub('\d',convert,s)
+print(r)
