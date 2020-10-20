@@ -1,3 +1,15 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@文件    :碱基的配对转换.py
+@说明    :
+@时间    :2020/10/20 13:18:50
+@作者    :陆柏成
+@版本    :1.0
+@Email   :lu_baicheng@163.com
+'''
+
+
 def DNA_CONVERT(sequence):
     sequence = sequence.upper()
     sequence = sequence.replace('A','t')
